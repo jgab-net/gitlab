@@ -1,0 +1,88 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/abraham/.nvm/versions/node/v5.2.0/bin/node',
+1 verbose cli   '/home/abraham/.nvm/versions/node/v5.2.0/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'node-sass@14' ]
+2 info using npm@3.3.12
+3 info using node@v5.2.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData node-sass@14
+8 silly fetchNamedPackageData node-sass
+9 silly mapToRegistry name node-sass
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry uri https://registry.npmjs.org/node-sass
+13 verbose request uri https://registry.npmjs.org/node-sass
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 3:34:59 PM
+16 verbose request id 2f66e801de215ebb
+17 verbose etag "AP2N7XFWAUQOFJVOXXIWTZW1U"
+18 http request GET https://registry.npmjs.org/node-sass
+19 http 304 https://registry.npmjs.org/node-sass
+20 verbose headers { date: 'Thu, 03 Mar 2016 20:05:00 GMT',
+20 verbose headers   via: '1.1 varnish',
+20 verbose headers   'cache-control': 'max-age=300',
+20 verbose headers   etag: '"AP2N7XFWAUQOFJVOXXIWTZW1U"',
+20 verbose headers   age: '150',
+20 verbose headers   connection: 'keep-alive',
+20 verbose headers   'x-served-by': 'cache-iad2139-IAD',
+20 verbose headers   'x-cache': 'HIT',
+20 verbose headers   'x-cache-hits': '4',
+20 verbose headers   'x-timer': 'S1457035500.369976,VS0,VE0',
+20 verbose headers   vary: 'Accept' }
+21 silly get cb [ 304,
+21 silly get   { date: 'Thu, 03 Mar 2016 20:05:00 GMT',
+21 silly get     via: '1.1 varnish',
+21 silly get     'cache-control': 'max-age=300',
+21 silly get     etag: '"AP2N7XFWAUQOFJVOXXIWTZW1U"',
+21 silly get     age: '150',
+21 silly get     connection: 'keep-alive',
+21 silly get     'x-served-by': 'cache-iad2139-IAD',
+21 silly get     'x-cache': 'HIT',
+21 silly get     'x-cache-hits': '4',
+21 silly get     'x-timer': 'S1457035500.369976,VS0,VE0',
+21 silly get     vary: 'Accept' } ]
+22 verbose etag https://registry.npmjs.org/node-sass from cache
+23 verbose get saving node-sass to /home/abraham/.npm/registry.npmjs.org/node-sass/.cache.json
+24 silly fetchPackageMetaData Error: No compatible version found: node-sass@14
+24 silly fetchPackageMetaData Valid install targets:
+24 silly fetchPackageMetaData 3.5.0-beta.1, 3.4.2, 3.4.1, 3.4.0, 3.4.0-beta1, 3.4.0-beta.2, 3.3.3, 3.3.2, 3.3.1, 3.3.0, 3.2.0, 3.1.2, 3.1.1, 3.1.0, 3.0.0, 3.0.0-beta.7, 3.0.0-beta.5, 3.0.0-beta.4, 3.0.0-beta.3, 3.0.0-beta.2, 3.0.0-alpha.0, 2.1.1, 2.1.0, 2.0.1, 2.0.0, 2.0.0-beta, 1.2.3, 1.2.2, 1.2.1, 1.2.0, 1.1.4, 1.1.3, 1.1.2, 1.1.1, 1.1.0, 1.0.3, 1.0.2, 1.0.2-alpha, 1.0.1, 1.0.0, 0.9.6, 0.9.5, 0.9.5-rc1, 0.9.4, 0.9.4-rc1, 0.9.3, 0.9.2, 0.9.1, 0.9.0, 0.8.6, 0.8.5, 0.8.4, 0.8.3, 0.8.2, 0.8.1, 0.8.0, 0.7.0, 0.7.0-alpha, 0.6.7, 0.6.6, 0.6.5, 0.6.4, 0.6.3, 0.6.2, 0.6.1, 0.6.0, 0.5.4, 0.5.3, 0.5.2, 0.5.1, 0.5.0, 0.4.4, 0.4.3, 0.4.2, 0.4.1, 0.4.0, 0.3.0, 0.2.6, 0.2.5, 0.2.4, 0.2.3, 0.2.2, 0.2.1, 0.2.0
+24 silly fetchPackageMetaData
+24 silly fetchPackageMetaData     at pickVersionFromRegistryDocument (/home/abraham/.nvm/versions/node/v5.2.0/lib/node_modules/npm/lib/fetch-package-metadata.js:156:16)
+24 silly fetchPackageMetaData     at /home/abraham/.nvm/versions/node/v5.2.0/lib/node_modules/npm/node_modules/iferr/index.js:13:50
+24 silly fetchPackageMetaData     at /home/abraham/.nvm/versions/node/v5.2.0/lib/node_modules/npm/lib/utils/pulse-till-done.js:19:8
+24 silly fetchPackageMetaData     at saved (/home/abraham/.nvm/versions/node/v5.2.0/lib/node_modules/npm/lib/cache/caching-client.js:168:7)
+24 silly fetchPackageMetaData     at /home/abraham/.nvm/versions/node/v5.2.0/lib/node_modules/npm/node_modules/graceful-fs/polyfills.js:210:7
+24 silly fetchPackageMetaData     at FSReqWrap.oncomplete (fs.js:83:15)
+24 silly fetchPackageMetaData  error for node-sass@14 [Error: No compatible version found: node-sass@14
+24 silly fetchPackageMetaData Valid install targets:
+24 silly fetchPackageMetaData 3.5.0-beta.1, 3.4.2, 3.4.1, 3.4.0, 3.4.0-beta1, 3.4.0-beta.2, 3.3.3, 3.3.2, 3.3.1, 3.3.0, 3.2.0, 3.1.2, 3.1.1, 3.1.0, 3.0.0, 3.0.0-beta.7, 3.0.0-beta.5, 3.0.0-beta.4, 3.0.0-beta.3, 3.0.0-beta.2, 3.0.0-alpha.0, 2.1.1, 2.1.0, 2.0.1, 2.0.0, 2.0.0-beta, 1.2.3, 1.2.2, 1.2.1, 1.2.0, 1.1.4, 1.1.3, 1.1.2, 1.1.1, 1.1.0, 1.0.3, 1.0.2, 1.0.2-alpha, 1.0.1, 1.0.0, 0.9.6, 0.9.5, 0.9.5-rc1, 0.9.4, 0.9.4-rc1, 0.9.3, 0.9.2, 0.9.1, 0.9.0, 0.8.6, 0.8.5, 0.8.4, 0.8.3, 0.8.2, 0.8.1, 0.8.0, 0.7.0, 0.7.0-alpha, 0.6.7, 0.6.6, 0.6.5, 0.6.4, 0.6.3, 0.6.2, 0.6.1, 0.6.0, 0.5.4, 0.5.3, 0.5.2, 0.5.1, 0.5.0, 0.4.4, 0.4.3, 0.4.2, 0.4.1, 0.4.0, 0.3.0, 0.2.6, 0.2.5, 0.2.4, 0.2.3, 0.2.2, 0.2.1, 0.2.0
+24 silly fetchPackageMetaData ]
+25 silly rollbackFailedOptional Starting
+26 silly rollbackFailedOptional Finishing
+27 silly runTopLevelLifecycles Starting
+28 silly runTopLevelLifecycles Finishing
+29 silly install printInstalled
+30 verbose stack Error: No compatible version found: node-sass@14
+30 verbose stack Valid install targets:
+30 verbose stack 3.5.0-beta.1, 3.4.2, 3.4.1, 3.4.0, 3.4.0-beta1, 3.4.0-beta.2, 3.3.3, 3.3.2, 3.3.1, 3.3.0, 3.2.0, 3.1.2, 3.1.1, 3.1.0, 3.0.0, 3.0.0-beta.7, 3.0.0-beta.5, 3.0.0-beta.4, 3.0.0-beta.3, 3.0.0-beta.2, 3.0.0-alpha.0, 2.1.1, 2.1.0, 2.0.1, 2.0.0, 2.0.0-beta, 1.2.3, 1.2.2, 1.2.1, 1.2.0, 1.1.4, 1.1.3, 1.1.2, 1.1.1, 1.1.0, 1.0.3, 1.0.2, 1.0.2-alpha, 1.0.1, 1.0.0, 0.9.6, 0.9.5, 0.9.5-rc1, 0.9.4, 0.9.4-rc1, 0.9.3, 0.9.2, 0.9.1, 0.9.0, 0.8.6, 0.8.5, 0.8.4, 0.8.3, 0.8.2, 0.8.1, 0.8.0, 0.7.0, 0.7.0-alpha, 0.6.7, 0.6.6, 0.6.5, 0.6.4, 0.6.3, 0.6.2, 0.6.1, 0.6.0, 0.5.4, 0.5.3, 0.5.2, 0.5.1, 0.5.0, 0.4.4, 0.4.3, 0.4.2, 0.4.1, 0.4.0, 0.3.0, 0.2.6, 0.2.5, 0.2.4, 0.2.3, 0.2.2, 0.2.1, 0.2.0
+30 verbose stack
+30 verbose stack     at pickVersionFromRegistryDocument (/home/abraham/.nvm/versions/node/v5.2.0/lib/node_modules/npm/lib/fetch-package-metadata.js:156:16)
+30 verbose stack     at /home/abraham/.nvm/versions/node/v5.2.0/lib/node_modules/npm/node_modules/iferr/index.js:13:50
+30 verbose stack     at /home/abraham/.nvm/versions/node/v5.2.0/lib/node_modules/npm/lib/utils/pulse-till-done.js:19:8
+30 verbose stack     at saved (/home/abraham/.nvm/versions/node/v5.2.0/lib/node_modules/npm/lib/cache/caching-client.js:168:7)
+30 verbose stack     at /home/abraham/.nvm/versions/node/v5.2.0/lib/node_modules/npm/node_modules/graceful-fs/polyfills.js:210:7
+30 verbose stack     at FSReqWrap.oncomplete (fs.js:83:15)
+31 verbose cwd /home/abraham/Factory/hack/gitlab
+32 error Linux 3.16.0-53-generic
+33 error argv "/home/abraham/.nvm/versions/node/v5.2.0/bin/node" "/home/abraham/.nvm/versions/node/v5.2.0/bin/npm" "install" "node-sass@14"
+34 error node v5.2.0
+35 error npm  v3.3.12
+36 error No compatible version found: node-sass@14
+36 error Valid install targets:
+36 error 3.5.0-beta.1, 3.4.2, 3.4.1, 3.4.0, 3.4.0-beta1, 3.4.0-beta.2, 3.3.3, 3.3.2, 3.3.1, 3.3.0, 3.2.0, 3.1.2, 3.1.1, 3.1.0, 3.0.0, 3.0.0-beta.7, 3.0.0-beta.5, 3.0.0-beta.4, 3.0.0-beta.3, 3.0.0-beta.2, 3.0.0-alpha.0, 2.1.1, 2.1.0, 2.0.1, 2.0.0, 2.0.0-beta, 1.2.3, 1.2.2, 1.2.1, 1.2.0, 1.1.4, 1.1.3, 1.1.2, 1.1.1, 1.1.0, 1.0.3, 1.0.2, 1.0.2-alpha, 1.0.1, 1.0.0, 0.9.6, 0.9.5, 0.9.5-rc1, 0.9.4, 0.9.4-rc1, 0.9.3, 0.9.2, 0.9.1, 0.9.0, 0.8.6, 0.8.5, 0.8.4, 0.8.3, 0.8.2, 0.8.1, 0.8.0, 0.7.0, 0.7.0-alpha, 0.6.7, 0.6.6, 0.6.5, 0.6.4, 0.6.3, 0.6.2, 0.6.1, 0.6.0, 0.5.4, 0.5.3, 0.5.2, 0.5.1, 0.5.0, 0.4.4, 0.4.3, 0.4.2, 0.4.1, 0.4.0, 0.3.0, 0.2.6, 0.2.5, 0.2.4, 0.2.3, 0.2.2, 0.2.1, 0.2.0
+37 error If you need help, you may report this error at:
+37 error     <https://github.com/npm/npm/issues>
+38 verbose exit [ 1, true ]

@@ -1,0 +1,19 @@
+<div class="login-container container">
+  <form name="accessForm" ng-submit="controller.access(accessForm.$valid)" novalidate>
+    <div class="login panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title text-center">Access</h3>
+      </div>
+      <div class="panel-body">
+        <div class="form-group" ng-class="{ 'has-error' : accessForm.token.$invalid && submitted}">
+          <label class="sr-only" for="token">Contraseña</label>
+          <input ng-model="controller.user.token" id="token" name="token" type="text" class="form-control" placeholder="Token" required/>
+        </div>
+        Find your token in <a href="https://gitlab.com/profile/account"><b>Gitlab</b> profile page</a>
+      </div>
+      <div class="panel-footer">
+        <button class="btn btn-lg btn-primary btn-block" type="submit" disablebutton >Entrar</button>
+      </div>
+    </div>
+  </form>
+</div>

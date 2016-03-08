@@ -1,0 +1,118 @@
+/**
+ *  If you want to override some bootstrap variables, you have to change values here.
+ *  The list of variables are listed here bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss
+ */
+$navbar-inverse-link-color: #5AADBB;
+$icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+
+
+$border-radius-large: 0;
+$border-radius-base: 0;
+$border-radius-small: 0;
+
+/**
+ *  Do not remove the comments below. It's the markers used by wiredep to inject
+ *  sass dependencies when defined in the bower.json of your dependencies
+ */
+// bower:scss
+// endbower
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+.thumbnail {
+  height: 200px;
+
+  img.pull-right {
+    width: 50px;
+  }
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+[ui-view] {
+  height: 100%;
+}
+
+
+.login-container{
+  display:flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100%;
+  .login{
+    min-width: 340px;
+    box-shadow: 4px 4px 15px 0px rgba(50, 50, 50, 0.15);
+
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+
+    .panel-title{
+      font-size: 1.1em;
+      color: #777;
+    }
+
+    >.panel-body{
+      padding: 22px 16px;
+
+      .form-control{
+        font-size: 12px;
+        height: auto;
+        padding: 6px 10px;
+        margin-bottom: 22px;
+        box-sizing: border-box;
+      }
+
+      label{
+        font-weight: normal;
+        font-size: 0.9em;
+        min-height: 0;
+        margin-top: auto;
+        //margin-left: 20px;
+      }
+      .left-side{
+        color: #777;
+        padding: 0;
+
+      }
+
+      .right-side{
+        @extend .text-right;
+        font-size: 0.9em;
+      }
+    }
+
+    >.panel-footer{
+      padding: 0;
+      border: none;
+      background: none;
+
+      >.btn-primary{
+        padding: 6px 10px;
+      }
+    }
+  }
+}
+
+
+
+/**
+ *  Do not remove the comments below. It's the markers used by gulp-inject to inject
+ *  all your sass files automatically
+ */
+// injector
+// endinjector

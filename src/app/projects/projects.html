@@ -1,0 +1,22 @@
+<div class="container-fluid">
+  <div class="row" masonry>
+    <div class="col-xs-4 masonry-brick" ng-repeat="project in controller.projects">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title"><a href="{{project.web_url}}">{{project.name}}</a></h3>
+        </div>
+        <div class="panel-body" ng-if="project.description">
+          {{project.description}}
+        </div>
+        <div class="panel-body">
+          None
+        </div>
+        <ul class="list-group">
+          <li class="list-group-item">Group: {{project.namespace.name}}</li>
+          <li class="list-group-item">Owner: <a href="{{project.owner.web_url}}">{{project.owner.name}}</a></li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
